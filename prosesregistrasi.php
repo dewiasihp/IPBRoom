@@ -11,7 +11,7 @@ $no_handphone = $_POST['no_telepon'];
 $simpan = mysqli_query( $koneksi, "INSERT INTO user VALUES ('$nim', '$nama', '$email', '$no_handphone', '$jabatan', '$password')");
 
 if ($simpan){
-	echo "<script> alert ('Berhasil Disimpan')</script>";
+	echo "<script> alert ('Regristrasi Berhasil')</script>";
 	header ("refresh:0;login-page.php");
 } else {
 	echo "<script>alert ('Regristrasi Berhasil')</script>";
